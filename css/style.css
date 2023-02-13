@@ -4,11 +4,24 @@ body{
    font-family:"Roboto",Arial ,sans-serif;
    letter-spacing: 0.5px;
 }
+*:focus{
+  outline: 2px dotted #ff7500;
+  outline-offset: 4px;
+}
 .site-header{
   background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.logo-link{
+  transition: opacity 0.4s ease;
+}
+.logo-link:hover{
+opacity: 0.8;
+}
+.logo-link:active{
+  opacity: 0.6;
 }
 .site-header-actions{
   display: flex;
@@ -26,7 +39,14 @@ body{
   text-transform: uppercase;
   text-decoration: none;
   color: #000;
+  transition: color 0.4s ease, opacity 0.9s ease;
 
+}
+.sitenav-link:hover{
+  color:#ff7500 ;
+}
+sitenav-link:active{
+ opacity: 0.6;
 }
 .main-link{
    font-size: 13px;
@@ -34,6 +54,13 @@ body{
    background-color: #ff7500;
    color: #fff;
    text-decoration: none;
+   transition: opacity 0.4s ease;
+}
+.main-link:hover{
+  opacity:0.8;
+}
+.main-link:active{
+  opacity: 0.6;
 }
 .hero{
   display: flex;
@@ -128,6 +155,15 @@ body{
  display: flex;
  align-items: center;
 }
+.site-footer-social a{
+  color: #252420;
+}
+.site-footer-social a:hover{
+  color: #ff7500;
+}
+.site-footer-social a:active{
+opacity: 0.6;
+}
 .site-footer-divider{
   height: 2px;
   background-color: rgba(37, 36, 32, 0.5);
@@ -144,4 +180,10 @@ body{
 .site-footer-link-list a{
   text-decoration: none;
   color: #252420;
+}
+.site-footer-link-list a:hover{
+ color:#ff7500;
+}
+.site-footer-link-list a:focus{
+ opacity: 0.6;
 }
