@@ -13,6 +13,9 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-top: 5px solid #ff7500;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 .logo-link{
   transition: opacity 0.4s ease;
@@ -30,6 +33,7 @@ opacity: 0.8;
 .sitenav-list{
   list-style: none;
   display: flex;
+  padding: 0;
 }
 .sitenav-link{
   font-weight: 500;
@@ -49,12 +53,16 @@ sitenav-link:active{
  opacity: 0.6;
 }
 .main-link{
+  display: inline-block;
    font-size: 13px;
    line-height: 15px;
    background-color: #ff7500;
    color: #fff;
    text-decoration: none;
    transition: opacity 0.4s ease;
+   padding: 12px 24px 12px 24px;
+   border-radius: 4px;
+   font-weight: bold;
 }
 .main-link:hover{
   opacity:0.8;
@@ -68,6 +76,8 @@ sitenav-link:active{
   color: #fff;
   align-items:center;
   justify-content: space-between;
+  padding-top: 80px;
+  padding-bottom: 80px;
 
 }
 .hero-content{
@@ -76,11 +86,13 @@ sitenav-link:active{
 .hero-img{
   width: 510px;
   height: 510px;
+  border-radius: 8px;
 }
 .orange-line{
  width: 80px;
  height: 3px;
  background: #FF7500;
+ border: none;
 }
 .hero-heading{
   font-weight: bold;
@@ -90,6 +102,10 @@ sitenav-link:active{
 
 }
 /* FEATURES */
+.features{
+  padding-top: 210px;
+  padding-bottom: 210px;
+}
 .features-heading{
   width: 440px;
   font-size:72px;
@@ -100,6 +116,7 @@ sitenav-link:active{
   display: flex;
   list-style: none;
   justify-content: space-between;
+  padding: 0;
 }
 .feature{
   width: 340px;
@@ -108,15 +125,19 @@ sitenav-link:active{
  width: 100px;
  height: 100px;
  background-color:rgba(255, 117, 0, 0.2);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 50%;
 }
 .feature-heading{
   font-size:24px;
   line-height: 1.2;
   font-family: "Roboto Condensed","Roboto","Arial",
-
 }
-
 .promo{
+  border-radius:12px;
+
    background: #252420;
    color: #fff;
    display: flex;
@@ -139,9 +160,12 @@ sitenav-link:active{
  width: 440px;
  line-height: 440px;
  object-fit: cover;
+ border-radius: 12px;
 }
 .site-footer{
   background: #f8f8f8;
+  padding-top: 56px;
+  padding-bottom: 56px;
 }
 .site-footer-top{
   display: flex;
@@ -150,13 +174,16 @@ sitenav-link:active{
 }
 .site-footer ul  {
  list-style: none;
+ padding: 0;
 }
 .site-footer-social{
  display: flex;
  align-items: center;
+ padding: none;
 }
 .site-footer-social a{
   color: #252420;
+
 }
 .site-footer-social a:hover{
   color: #ff7500;
@@ -167,6 +194,7 @@ opacity: 0.6;
 .site-footer-divider{
   height: 2px;
   background-color: rgba(37, 36, 32, 0.5);
+  border: none;
 }
 .site-footer-bottom{
   display: flex;
